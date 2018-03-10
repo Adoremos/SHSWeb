@@ -1,11 +1,12 @@
 <head>
     <title>Home Page</title>
     <style>
-        * {outline: 2px dotted grey}
         html, body{
             margin: 0;
             height: 100%;
             background-color: #333333;
+            padding-left: 25px;
+            padding-right: 25px;
         }
         .navi {
             margin-top: 20px;
@@ -14,11 +15,14 @@
             text-align: right; 
             width: 100%;
             z-index: 9999999;
-            border-bottom: 4px solid blue;
+            color: white;
         }
         nav ul {
             list-style: none;
-            margin-right: 15px;
+            margin-right: 5px;
+            margin-left: 5px;
+            border-bottom: 2px solid grey;
+            border-top: 2px solid grey;
         }
         nav li {
             display: inline-block;
@@ -26,10 +30,14 @@
         }
         nav a {
             text-decoration: none;
-            color: blue;
+            color: white;
+        }
+        nav a:hover{
+            color: #FFD452;
         }
         .main1 {
             position: relative;
+            color: #FFD452;
         }
     </style>
 </head>
@@ -38,7 +46,7 @@
     <div class="navi">
         <nav>
             <ul>
-                <li>Home</li>
+                <li><a href="#main1">Home</a></li>
                 <li><a href="../about">About Us</a></li>
                 <li><a href="../contact">Contact Us</a></li>
             </ul> 
