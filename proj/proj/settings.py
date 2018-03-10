@@ -54,7 +54,7 @@ ROOT_URLCONF = 'proj.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [],
+        'DIRS': [os.path.join(BASE_DIR, 'SHSWeb/templates')],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
