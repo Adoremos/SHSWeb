@@ -8,14 +8,12 @@
             padding-left: 25px;
             padding-right: 25px;
         }
-        .navi {
-            margin-top: 20px;
-        }
         nav {
             text-align: right; 
             width: 100%;
             z-index: 9999999;
             color: white;
+            margin-bottom: 40px;
         }
         nav ul {
             list-style: none;
@@ -23,6 +21,7 @@
             margin-left: 5px;
             border-bottom: 2px solid grey;
             border-top: 2px solid grey;
+            font-size: 20px;
         }
         nav li {
             display: inline-block;
@@ -35,6 +34,16 @@
         nav a:hover{
             color: #FFD452;
         }
+        .logo {
+            padding-bottom: 10px;
+            padding-left: 30px;
+        }
+        .logo img{
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            float: left;
+        }
         .main1 {
             position: relative;
             color: #FFD452;
@@ -44,11 +53,19 @@
 <body>
     <!--upper part-->
     <div class="navi">
+        <div class="logo">
+            
+        </div>
         <nav>
+            <div class="logo">
+            {% load static %}
+            <img src="{% static "Funker530FacebookProfilePhoto.png" %}"/>
+            </div>
             <ul>
                 <li><a href="#main1">Home</a></li>
                 <li><a href="../about">About Us</a></li>
                 <li><a href="../contact">Contact Us</a></li>
+                <li><a href="../register">Register</a></li>
             </ul> 
         </nav>
     </div>
