@@ -15,12 +15,20 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path
+<<<<<<< HEAD
 from SHSWeb.views import contact, about, index, register, account_list
+=======
+from SHSWeb.views import contact, about, index, register, login
+>>>>>>> 6d72186fdd90933f81fe45b798c82bc44c787f25
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('contact/', contact),
     path('about/', about),
     path('index/', index),
     path('register/', register),
+<<<<<<< HEAD
     path('account_list/', account_list),
+=======
+    path('login/', login)
+>>>>>>> 6d72186fdd90933f81fe45b798c82bc44c787f25
 ]
