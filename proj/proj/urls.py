@@ -17,8 +17,10 @@ from django.contrib import admin
 from django.urls import path
 from SHSWeb.views import contact
 from SHSWeb.views import about
+from SHSWeb.views import index
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('contact/', contact),
     path('about/', about),
+    path('index/', index),
 ]
