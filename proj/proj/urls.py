@@ -16,8 +16,11 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path
 from SHSWeb.views import contact
+from SHSWeb.views import about
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('contact/', contact)
+    path('contact/', contact),
+    path('about/', about),
+
 
 ]
