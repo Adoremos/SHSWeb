@@ -24,3 +24,7 @@ def register(request):
         obj.save()
     form=studentform()
     return render(request, "register.html",{"form" : form})
+
+def account_list(request):
+    obj = Students.objects.all()
+    return render(request, "account_list.html", {"Stud_list" : obj})

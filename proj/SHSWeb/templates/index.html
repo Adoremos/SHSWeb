@@ -1,6 +1,11 @@
 <head>
     <title>Home Page</title>
     <style>
+        @media only screen and (max-width: 1000px) {
+            body {
+                background-color: #333333;
+            }
+        }
         html, body{
             margin: 0;
             height: 100%;
@@ -58,8 +63,8 @@
         </div>
         <nav>
             <div class="logo">
-            {% load static %}
-            <img src="{% static "Funker530FacebookProfilePhoto.png" %}"/>
+                {% load static %}
+                <img src="{% static "Funker530FacebookProfilePhoto.png" %}"/>
             </div>
             <ul>
                 <li><a href="#main1">Home</a></li>
