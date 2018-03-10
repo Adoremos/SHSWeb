@@ -25,11 +25,9 @@ def register(request):
     form=studentform()
     return render(request, "register.html",{"form" : form})
 
-<<<<<<< HEAD
 def account_list(request):
     obj = Students.objects.all()
     return render(request, "account_list.html", {"Stud_list" : obj})
-=======
 def login(request):
     if request.POST:
         obj= Students.objects.all()
@@ -44,4 +42,3 @@ def login(request):
 
     return render(request, "login.html", {"form" : form})
     
->>>>>>> 6d72186fdd90933f81fe45b798c82bc44c787f25
